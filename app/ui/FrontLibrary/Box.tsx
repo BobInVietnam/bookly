@@ -10,7 +10,7 @@ export default function Box(
   }
 ) {
   return (
-    <div className="w-2/3 h-24 bg-indigo-900 my-2 rounded-md">
+    <div className="w-2/3 h-48 bg-indigo-900 my-2 rounded-md">
       <div className="bg-indigo-400 rounded-md">
         <h1 className="text-center ">{title}</h1>
       </div>
