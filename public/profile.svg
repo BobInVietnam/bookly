@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2.2000029mm"
+   height="2.199995mm"
+   viewBox="0 0 2.2000029 2.199995"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:export-filename="layer1.png"
+     inkscape:export-xdpi="1154.5439"
+     inkscape:export-ydpi="1154.5439"
+     transform="translate(-103.89999,-147.39999)">
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:square;stroke-miterlimit:0;stroke-dashoffset:3.77954;stroke-opacity:1"
+       id="path1"
+       cx="105"
+       cy="148.5"
+       r="1" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.386986;stroke-linecap:square;stroke-miterlimit:0;stroke-dashoffset:3.77954;stroke-opacity:1"
+       id="path4"
+       cx="104.65353"
+       cy="148.37126"
+       rx="0.16306935"
+       ry="0.24487281" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.15;stroke-linecap:square;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:3.77954;stroke-opacity:1"
+       id="path5"
+       cx="105.38782"
+       cy="148.37126"
+       rx="0.29750234"
+       ry="0.30460843" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.15;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:3.77954;stroke-opacity:1"
+       d="m 104.58163,148.98817 c 0.17669,0.14615 0.63341,0.11397 0.81904,0.0316"
+       id="path6"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.15;stroke-linecap:butt;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:3.77954;stroke-opacity:1"
+       d="m 105.56366,148.66613 c 0,0 0.21807,0.48974 0.44479,1.2e-4"
+       id="path7"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
