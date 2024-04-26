@@ -1,6 +1,8 @@
 'use client'
 import { MouseEventHandler, useState } from "react";
 
+// For testing
+
 function Square({value, onSquareClick}: { value: String, onSquareClick: MouseEventHandler<HTMLButtonElement>}) {
   return <button className="aspect-square bg-zinc-700" onClick={onSquareClick}>
       {value}

@@ -1,15 +1,22 @@
-import { MouseEventHandler } from "react"
+'use client'
+import { Link as ScrollLink } from "react-scroll"
+
+// Currently doing nothing
 
 export default function SideBarTab({
   title,
-  onClick
+  destination
 }: {
   title: string,
-  onClick: MouseEventHandler<HTMLDivElement> 
+  destination: string
 }) {
   return (
-    <div className="hover:bg-zinc-800 hover:cursor-pointer" onClick={onClick}>
+    <ScrollLink className="hover:bg-zinc-800 hover:cursor-pointer"
+      to={destination}
+      smooth={true}
+      duration={500}
+    >
       <p className="font-sans indent-4 text-xl p-2">{title}</p>
-    </div>
+    </ScrollLink>
   )
 }

@@ -1,5 +1,5 @@
-import TestRef from "../ui/TestRef";
-import TicTacToe from "../ui/TicTacToe";
+import TestRef from "../ui/testComponent/TestRef";
+import TicTacToe from "../ui/testComponent/TicTacToe";
 
 export default function Page() {
   return (

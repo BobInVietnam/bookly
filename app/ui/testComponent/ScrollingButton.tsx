@@ -1,6 +1,8 @@
 'use client'
 import { MouseEventHandler } from "react"
 
+// Currently not functioning
+
 export default function ScrollingButton({
   onClick
 }: {

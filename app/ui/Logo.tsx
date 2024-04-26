@@ -1,3 +1,8 @@
+/**
+ * A logo. Might be used to return to the front page.
+ * @returns A Bookly logo
+ */
+
 export default function Logo() {
   return (
   <div className="text-center bg-transparent p-2">
