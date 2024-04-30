@@ -1,5 +1,5 @@
 import Box from '@/app/ui/testComponent/Box'
-import ReturnButton from '../ui/frontpage/ReturnButton';
+import ReturnButton from '../ui/testComponent/ReturnButton';
 import Link from 'next/link';
 
 export default function Page() {

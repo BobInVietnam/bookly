@@ -1,4 +1,3 @@
-import SideBar from "../ui/SideBar"
 import TopBar from "../ui/TopBar"
 
 export default function LibraryLayout({

@@ -1,5 +1,5 @@
 import Box from '@/app/ui/testComponent/Box'
-import ReturnButton from '../ui/frontpage/ReturnButton';
+import ReturnButton from '../ui/testComponent/ReturnButton';
 import SideBar from '../ui/SideBar';
 import Link from 'next/link';
 import Collection from '../ui/frontpage/Collection';
@@ -28,7 +28,7 @@ const sideBarTabs = [
 
 export default function Page() {
   return (
-    <div className="flex-row scroll-smooth">
+    <div className="flex-row">
       {/* Side bar for navigation in-page */}
       <div className="h-full grow fixed bg-zinc-900 border-zinc-800 border-8">
         <SideBar tabs={sideBarTabs}/>

@@ -37,7 +37,9 @@ export default function BookPanel({
               <p className="text-ellipsis">{book.author}</p>
               <p className="text-ellipsis">{book.description}</p>
             </div>
-            <Link href="book" >
+            <Link href="book" onClick={() => {
+              localStorage.setItem("currentBook", JSON.stringify(book))
+            }}>
               <p className="text-lg">Read Book</p>
             </Link>
           </div>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 /**
- * User profile button 
+ * User profile button.
  * @returns 
  */
 export default function UserShortcut() {
