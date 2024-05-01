@@ -7,7 +7,7 @@ export default function LibraryLayout({
 }) {
 
   return (
-      <div className="">
+      <div className="overscroll-none">
         <div className="top-0 sticky overflow-x-hidden">
           <TopBar/>
         </div>

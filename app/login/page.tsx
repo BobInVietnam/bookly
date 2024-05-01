@@ -1,29 +1,48 @@
 'use client'
-import {User} from "@/app/lib/definitions"
+
+import { useState } from "react";
+import { submitForm } from "../lib/loginController";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter();
 
-  var userData = {
-    user_id: "123",
-    password: "123",
-    profile_pic: "public\thumbnails\absolute_kino.jpg"
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
+    event.preventDefault();
+    const msg = submitForm(username, password)
+    if (msg === "NO_USER") {
+      alert("No user exist.");
+    } else if (msg === "WRONG_PASS") {
+      alert("Wrong password.")
+    } else {
+      router.push("frontpage");
+    }
   }
-  
+
   return (
     <>
       <div>
         <p>This is the login site</p>
       </div>
       <div>
-        <button 
-          className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium text-gray-900 hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" 
-          onClick={() => {
-            localStorage.setItem("user", JSON.stringify(userData));
-            alert("Logged in");
-          }}
-        >
-          Press the button to send info to localStorage
-        </button>
+        <form onSubmit={handleSubmit} className="flex-col">
+          <div>
+            <label>Username: </label>
+            <input type="text" id="username" placeholder="admin" value={username} className="bg-stone-950 border-white border-2" onChange={(e) => {
+              setUsername(e.target.value);
+            }}/>
+          </div>
+          <div>
+            <label>Password: </label>
+            <input type="password" id="password" placeholder="password" value={password} className="bg-stone-950 border-white border-2" onChange={(e) => {
+              setPassword(e.target.value);
+            }}/>
+          </div>
+          <input type="submit" className="cursor-pointer"/>
+        </form>
       </div>
     </>
   )

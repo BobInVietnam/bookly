@@ -6,15 +6,13 @@ export default function TitlePane({
   book: Book
 }) {
 
-  const temp = localStorage.getItem("currentBook")
-  if (temp !== null) {
-    const bookInfo = JSON.parse(temp);
-  }
-
   return (
-    <div>
-      <img>
+    <div className="">
+      <img src={book.cover_image}>
       </img>
+      <div>
+        <p>{book.author}</p>
+      </div>
     </div>
   )
 }

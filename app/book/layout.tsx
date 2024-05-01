@@ -7,13 +7,11 @@ export default function LibraryLayout({
 }) {
 
   return (
-      <div className="flex flex-col grow h-screen">
-        <div>
+      <div className="overscroll-none">
+        <div className="top-0 sticky overflow-x-hidden">
           <TopBar/>
         </div>
-        <div className="h-full flex-grow">
           {children}
-        </div>
       </div>
   )
 }
