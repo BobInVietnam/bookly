@@ -98,21 +98,25 @@ const someChapters = [
 const someReviews = [
   {
     review_id: 1,
+    user_id: "admin",
     score: 9,
     content: "A fine book. Would recommend."
   }, 
   {
     review_id: 2,
+    user_id: "user",
     score: 7,
     content: "An alright book. Would recommend I guess."
   }, 
   {
     review_id: 3,
+    user_id: "admin",
     score: 4,
     content: "Nah, not a fine book."
   }, 
   {
     review_id: 4,
+    user_id: "user",
     score: 1,
     content: "No"
   }, 

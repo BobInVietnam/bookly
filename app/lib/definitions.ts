@@ -28,6 +28,7 @@ export type Chapter = {
 
 export type Review = {
   review_id: number
+  user_id: string
   score: number
   content: string
 }
