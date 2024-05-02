@@ -21,7 +21,10 @@ export default function ChapterPanel({
                 <Link
                   href="/book/readsite"
                   onClick={() => {
-                    localStorage.setItem("chapter_id", chapterInfo?.chapter_id.toString())
+                    const chapterID = {
+                      chapter_id: chapterInfo?.chapter_id
+                    }
+                    localStorage.setItem("chapter_id", JSON.stringify(chapterID))
                   }}
                 >
                   <div className="rounded bg-slate-500 m-2">

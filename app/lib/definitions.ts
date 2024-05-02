@@ -44,3 +44,11 @@ export function Book() {
     reviews: []
   }
 }
+
+export function Chapter() {
+  return {
+    chapter_id: 0,
+    title: "",
+    content: ""
+  }
+}
