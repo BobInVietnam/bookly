@@ -1,3 +1,5 @@
+import { Book } from "./definitions"
+
 const someBooks = [
   {
     cover_image: "/thumbnails/ignored.jpg",
@@ -27,7 +29,7 @@ const someBooks = [
     last_update: "",
     genres: [2],
     chapters: [1, 2, 3, 4],
-    reviews: [1, 2]
+    reviews: [2, 3]
   },
   {
     cover_image: "/thumbnails/absolute_kino.jpg",
@@ -37,7 +39,7 @@ const someBooks = [
     last_update: "",
     genres: [2, 3, 4],
     chapters: [1, 2, 3, 4],
-    reviews: [1, 2]
+    reviews: [1, 2, 3]
   },
   {
     cover_image: "/thumbnails/absolute_kino.jpg",
@@ -47,7 +49,7 @@ const someBooks = [
     last_update: "",
     genres: [1],
     chapters: [1, 2],
-    reviews: [1, 2]
+    reviews: [1, 2, 3, 4]
   }
 ]
 
@@ -147,4 +149,15 @@ export function getReviewFromID(id: number) {
 
 export function getChapterFromID(id: number) {
   return someChapters.find(chapter => chapter.chapter_id === id)
+}
+
+export function getScore(book: Book) {
+  const bookReviews = someReviews.filter(review => book.reviews.includes(review.review_id));
+  var score = 0;
+  bookReviews.map(review => {
+    score += review.score;
+  })
+  score /= bookReviews.length;
+  score.toFixed(2);
+  return score;
 }

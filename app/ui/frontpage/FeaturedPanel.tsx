@@ -1,4 +1,6 @@
+'use client'
 import { Book } from "@/app/lib/definitions"
+import Link from "next/link"
 
 
 /**
@@ -12,15 +14,17 @@ export default function FeaturedPanel({
   books: Array<Book>
 }) {
 
-  
-
   return (
     <>
       <div className="bg-slate-900 h-[500px] grid grid-cols-3 gap-4 py-8">
-        <img className="object-contain object-center w-full h-full p-4"
-          src={books[0].cover_image}
-        >  
-        </img>
+        <Link href="book" onClick={() => {
+          localStorage.setItem("currentBook", JSON.stringify(books[0]))
+        }}>
+          <img className="object-contain object-center w-full h-full p-4"
+            src={books[0].cover_image}
+          >  
+          </img>
+        </Link>
         <div className = "col-span-2 grow">
           <div className="grid grid-rows-4 gap-2">
             <div>

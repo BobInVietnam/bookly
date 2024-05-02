@@ -1,11 +1,17 @@
+'use client'
+import { useRouter } from "next/navigation"
+
 /**
  * A logo. Might be used to return to the front page.
  * @returns A Bookly logo
  */
-
 export default function Logo() {
+  const router = useRouter();
+
   return (
-  <div className="text-center bg-transparent p-2">
+  <div className="text-center bg-transparent p-2 cursor-pointer" onClick={() => {
+    router.push("/frontpage")
+  }}>
     <h1 className="text-3xl font-serif">
       <img
         src="/boolky.png"

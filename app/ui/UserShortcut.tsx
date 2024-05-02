@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { log } from "console";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Button from "./Button";
 
 /**
  * User profile button.
@@ -26,7 +27,7 @@ export default function UserShortcut() {
   }
 
   return (
-    <div className="flex flex-row me-8 gap-2">
+    <div className="flex flex-row me-8 gap-2 justify-center">
       <Link
         href={reference}
         className=""
@@ -39,13 +40,12 @@ export default function UserShortcut() {
       </Link>
       <Link
         href="/frontpage"
+        className=""
       >
-        <button 
-          className="bg-slate-500"
-          onClick={() => logOut()}
-        >
-          o
-        </button>
+        <Button text="O" onClick={() => {
+          localStorage.removeItem("user");
+          router.refresh();
+        }}/>
       </Link>
     </div>
   )

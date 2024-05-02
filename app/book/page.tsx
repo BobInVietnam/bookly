@@ -34,14 +34,16 @@ export default function Page() {
       </div>
 
       <div className="flex flex-row h-full">
-        <div className="flex grow flex-col w-full gap-y-6 bg-gray-800 pl-[336px]">          
-          <TitlePane book={book}/>
-          <Link
-            href="book/readsite"
-            className="flex aspect-square w-[100px] bg-red-700"
-          >
-            <p>Tap here to go to read site</p>
-          </Link>
+        <div className="flex grow flex-col w-full gap-y-6 bg-gray-800 pl-[336px]">
+          <div className="flex-col">
+            <TitlePane book={book}/>
+            <Link
+              href="book/readsite"
+              className="flex aspect-square w-[100px] bg-red-700"
+            >
+              <p>Tap here to go to read site</p>
+            </Link>
+          </div>     
         </div>
         
       </div>
