@@ -4,6 +4,8 @@ import TitlePane from "../ui/book/TitlePane";
 import { Book } from "../lib/definitions";
 import SideBar from "../ui/SideBar";
 import GenrePanel from "../ui/book/GenrePanel";
+import DescriptionPanel from "../ui/book/DescriptionPanel";
+import ChapterPanel from "../ui/book/ChapterPanel";
 
 const sideBarTabs = [
   {
@@ -38,8 +40,10 @@ export default function Page() {
         <div className="flex grow flex-col w-full gap-y-6 bg-gray-800 pl-[336px]">
           <div className="flex-col">
             <TitlePane book={book}/>
-            <div className="mx-12">
+            <div className="mx-12 space-y-4">
               <GenrePanel book={book}/>
+              <DescriptionPanel book={book}/>
+              <ChapterPanel book={book}/>
             </div>
             <Link
               href="book/readsite"

@@ -11,7 +11,7 @@ export default function LibraryLayout({
         <div className="top-0 sticky overflow-x-hidden">
           <TopBar/>
         </div>
-          {children}
+        {children}
       </div>
   )
 }

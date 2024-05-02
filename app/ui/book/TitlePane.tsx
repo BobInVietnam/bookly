@@ -11,7 +11,7 @@ export default function TitlePane({
   return (
     <>
     <div className="h-[350px] bg-inherit">
-      <div className="grid grid-cols-5 relative h-[200px] bg-slate-700">
+      <div className="grid grid-cols-5 h-[200px] bg-slate-700">
         <img src={book.cover_image} className="min-w-[200px] pl-8 pt-12 aspect-[1/1.414] object-cover">
         </img>
         <div className="grid grid-rows-7 col-span-4 gap-2 px-6">
