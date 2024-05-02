@@ -3,6 +3,7 @@ import Link from "next/link";
 import TitlePane from "../ui/book/TitlePane";
 import { Book } from "../lib/definitions";
 import SideBar from "../ui/SideBar";
+import GenrePanel from "../ui/book/GenrePanel";
 
 const sideBarTabs = [
   {
@@ -37,6 +38,9 @@ export default function Page() {
         <div className="flex grow flex-col w-full gap-y-6 bg-gray-800 pl-[336px]">
           <div className="flex-col">
             <TitlePane book={book}/>
+            <div className="mx-12">
+              <GenrePanel book={book}/>
+            </div>
             <Link
               href="book/readsite"
               className="flex aspect-square w-[100px] bg-red-700"
